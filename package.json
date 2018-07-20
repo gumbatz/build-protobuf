@@ -1,0 +1,12 @@
+{
+  "name": "messages-protobuf",
+  "version": "0.2.7",
+  "description": "Proto3 Messages of the Gumbadev Crew",
+  "main": "index.js",
+  "repository": "git@devel-gitlab.security-as-a-service.org:MicroservicesCommon/Messages.git",
+  "author": "unglaublicherdude <github@matthias-simonis.de>",
+  "license": "MIT",
+  "dependencies": {
+    "protobufjs": "^6.8.8"
+  }
+}

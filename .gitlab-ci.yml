@@ -1,0 +1,7 @@
+stages:
+  - build
+
+composer_PhpLumenJsonLogFormatter:
+  stage: build
+  script:
+   - docker run -v $(pwd):/data -w /data node:8-stretch bash ./build.sh
