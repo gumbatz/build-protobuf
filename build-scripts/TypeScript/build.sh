@@ -3,7 +3,7 @@ echo -e "\e[37m[$(date '+%Y-%m-%d %H:%M:%S')]\e[39m \e[90m==>\e[39m \e[94mBuildi
 TYPESCRIPT_VERSION=${PACKAGE_VERSION:-0.1.0}
 echo -e "\e[37m[$(date '+%Y-%m-%d %H:%M:%S')]\e[39m \e[90m==>\e[39m \e[92mI need a global dependency, so please let sudo pass.\e[39m"
 
-if [ "$(id -un)" = "root" ]; then
+if [ "$(id -un)" = "root" ] || [ "$NON_INTERACTIVE" = "1"]; then
     npm install -g typescript >/dev/null
 else
     sudo npm install -g typescript >/dev/null

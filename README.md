@@ -7,6 +7,8 @@ Current supported languages:
 
 ## Changelog
 
+* v0.0.2 (2018-07-20):
+ * Added non-interactive mode.
 * v0.0.1 (2018-07-20):
  * Initial package
 
